@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        /*Tive que pedir ajuda pro copolit em algumas partes do codigo, dificilzao isso daqui*/
+        body {
+            background-color: rgb(255, 255, 255);
+            background-position: center;    
+            background-size: cover; 
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: rgb(169, 214, 250);
+            
+        }
+        .container {
+            text-align: center;
+        }
+        input {
+            margin: 10px;
+            font-style: initial;
+        }
+        label {
+            margin: 10px;
+            font-style: initial;
+            color: rgb(75, 106, 133);
+            font-size: medium;
+        }
+        button {
+            margin: 10px;
+            font-style: initial;
+            color: rgb(112, 204, 143);
+            font-size: medium;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" name="nome" id="nome"> <br> 
+            <label for="Email">Email:</label><br>
+            <input type="text" name="Email" id="Email"> <br> 
+            <textarea></textarea><br>
+            <button id="Butao5" class="Butao6">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("Butao5").onclick = function() {
+            if (document.getElementById("nome").value == "" || document.getElementById("Email").value == "") {
+                alert("Preencha os campos");
+                return false;
+            } else {
+                alert("Obrigado por enviar o formulario");
+            }
+        };
+    </script>
+</body>
+</html>
