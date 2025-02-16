@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+    <style>
+        body{
+          
+            background-position: center;    
+            background-size: cover; 
+            background-repeat: no-repeat;
+             ;
+        }
+        h1{
+            color: rgb(0, 0, 0);
+        }
+        p{
+            color: rgb(0, 0, 0);
+        }
+        #NaogosteiButton{
+            background-color: rgb(253, 70, 70);
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+        }
+        #MaisoumenosButton{
+            background-color: rgb(255, 255, 248);
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+        }
+        #GosteiButton{
+            background-color: rgb(36, 53, 207);
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <H1>Nesse site eu fiz 3 botoes para o exercicio do professor Vinicius,</H1>
+    <p>Tem 3 botoes, o nao gostei, gostei e o mais ou menos, depois que você clicar vai aparecer uma imagem</p>
+    <p></p>
+    <button id="GosteiButton" class="butao1">Gostei</button> 
+    <button id="MaisoumenosButton" class="Butao2">Mais ou menos</button>
+    <button id="NaogosteiButton" class="butao3">Nao gostei</button>
+    <script>
+       
+        document.getElementById("GosteiButton").onclick = function() {
+            alert("Você clicou no botao de Gostei");
+            document.images.src = "https://www.google.com/imgres?q=flor%20de%20cerejeira&imgurl=https%3A%2F%2Fcobasiblog.blob.core.windows.net%2Fproduction-ofc%2F2021%2F07%2Fflor-de-cerejeira-2.png&imgrefurl=https%3A%2F%2Fblog.cobasi.com.br%2Fflor-de-cerejeira%2F&docid=26Wy3IKJaZmDaM&tbnid=VBqX45P3DfVc-M&vet=12ahUKEwjgmrHYgMeLAxVkrpUCHQzGN_IQM3oECH0QAA..i&w=709&h=472&hcb=2&ved=2ahUKEwjgmrHYgMeLAxVkrpUCHQzGN_IQM3oECH0QAA";
+        }
+            document.getElementById("MaisoumenosButton").onclick = function() {
+            alert("Você clicou no botao mais ou menos");
+            document.images.src = "https://www.google.com/imgres?q=flor%20de%20lis&imgurl=https%3A%2F%2Fcdnm.westwing.com.br%2Fglossary%2Fuploads%2Fbr%2F2023%2F06%2F28194141%2FFlor-de-lis-fonte-unsplash-1.jpg&imgrefurl=https%3A%2F%2Fwww.westwing.com.br%2Fguiar%2Fflor-de-lis%2F&docid=YWdBk_VQSQmdrM&tbnid=OCUkAytU7QzbfM&vet=12ahUKEwi42aqtgMeLAxX6lZUCHehlHGwQM3oECB0QAA..i&w=780&h=500&hcb=2&ved=2ahUKEwi42aqtgMeLAxX6lZUCHehlHGwQM3oECB0QAA";
+            }
+            document.getElementById("NaogosteiButton").onclick = function() {
+            alert("Você clicou no botao do Nao gostei");
+            Document.images.src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-gratis%2Ffoto-de-foco-seletivo-de-uma-flor-roxa-de-margarida-africana_12448581.htm&psig=AOvVaw0wNSGbNCBXZXND_pzyjZAG&ust=1739754378169000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLj1rKCAx4sDFQAAAAAdAAAAABAE";
+            }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
