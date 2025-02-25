@@ -55,6 +55,13 @@
         <br>
 
 
+        
+        <script>
+            document.getElementById("button").addEventListener("click", function(){
+                alert("Cadastro realizado com sucesso,<?php echo $resultado;?>");
+            });
+
+        </script>
 
 
 
